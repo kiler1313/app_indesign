@@ -1,0 +1,7 @@
+C:\Users\Ruben\source\repos\InDesign\InDesignWCF\bin\InDesignWCF.dll.config
+C:\Users\Ruben\source\repos\InDesign\InDesignWCF\bin\InDesignWCF.dll
+C:\Users\Ruben\source\repos\InDesign\InDesignWCF\bin\InDesignWCF.pdb
+C:\Users\Ruben\source\repos\InDesign\InDesignWCF\obj\Debug\InDesignWCF.csprojAssemblyReference.cache
+C:\Users\Ruben\source\repos\InDesign\InDesignWCF\obj\Debug\InDesignWCF.csproj.CoreCompileInputs.cache
+C:\Users\Ruben\source\repos\InDesign\InDesignWCF\obj\Debug\InDesignWCF.dll
+C:\Users\Ruben\source\repos\InDesign\InDesignWCF\obj\Debug\InDesignWCF.pdb

@@ -1,0 +1,8 @@
+C:\Users\Ruben\source\repos\InDesign\InDesingRepository\bin\Debug\netcoreapp2.1\InDesignDTO.dll
+C:\Users\Ruben\source\repos\InDesign\InDesingRepository\bin\Debug\netcoreapp2.1\InDesignEntity.dll
+C:\Users\Ruben\source\repos\InDesign\InDesingRepository\bin\Debug\netcoreapp2.1\InDesignInterface.dll
+C:\Users\Ruben\source\repos\InDesign\InDesingRepository\bin\Debug\netcoreapp2.1\InDesignModel.dll
+C:\Users\Ruben\source\repos\InDesign\InDesingRepository\obj\Debug\netcoreapp2.1\InDesignRepository.csprojAssemblyReference.cache
+C:\Users\Ruben\source\repos\InDesign\InDesingRepository\obj\Debug\netcoreapp2.1\InDesignRepository.csproj.CoreCompileInputs.cache
+C:\Users\Ruben\source\repos\InDesign\InDesingRepository\obj\Debug\netcoreapp2.1\InDesignRepository.AssemblyInfoInputs.cache
+C:\Users\Ruben\source\repos\InDesign\InDesingRepository\obj\Debug\netcoreapp2.1\InDesignRepository.AssemblyInfo.cs

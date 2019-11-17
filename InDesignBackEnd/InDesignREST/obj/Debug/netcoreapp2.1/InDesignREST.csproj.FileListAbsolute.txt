@@ -1,0 +1,9 @@
+C:\Users\Ruben\source\repos\InDesign\InDesignREST\bin\Debug\netcoreapp2.1\InDesignEntity.dll
+C:\Users\Ruben\source\repos\InDesign\InDesignREST\bin\Debug\netcoreapp2.1\InDesignModel.dll
+C:\Users\Ruben\source\repos\InDesign\InDesignREST\obj\Debug\netcoreapp2.1\InDesignREST.csprojAssemblyReference.cache
+C:\Users\Ruben\source\repos\InDesign\InDesignREST\obj\Debug\netcoreapp2.1\InDesignREST.csproj.CoreCompileInputs.cache
+C:\Users\Ruben\source\repos\InDesign\InDesignREST\obj\Debug\netcoreapp2.1\InDesignREST.RazorAssemblyInfo.cache
+C:\Users\Ruben\source\repos\InDesign\InDesignREST\obj\Debug\netcoreapp2.1\InDesignREST.RazorAssemblyInfo.cs
+C:\Users\Ruben\source\repos\InDesign\InDesignREST\obj\Debug\netcoreapp2.1\InDesignREST.AssemblyInfoInputs.cache
+C:\Users\Ruben\source\repos\InDesign\InDesignREST\obj\Debug\netcoreapp2.1\InDesignREST.AssemblyInfo.cs
+C:\Users\Ruben\source\repos\InDesign\InDesignREST\obj\Debug\netcoreapp2.1\InDesignREST.RazorTargetAssemblyInfo.cache

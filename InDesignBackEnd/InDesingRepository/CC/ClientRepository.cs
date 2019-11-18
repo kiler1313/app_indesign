@@ -1,4 +1,5 @@
-﻿using InDesignInterface.CC;
+﻿using InDesignDTO.CC;
+using InDesignInterface.CC;
 using InDesignModel;
 using InDesignRepository.UT;
 using InDesingEntity.CC;
@@ -12,14 +13,14 @@ namespace InDesignRepository.CC
 {
     public class ClientRepository : IClientRepository
     {
-        public bool Create(Client client)
+        public bool Create(ClientDto clientDto)
         {
             bool isCreate = false;
-            if (client != null)
+            if (clientDto != null)
             {
                 using (InDesignContext context = new InDesignContext())
                 {
-                    context.Client.Add(client);
+                    context.Client.Add(clientDto.client);
                     int save = context.SaveChanges();
                     if (save > 0)
                     {
@@ -34,14 +35,15 @@ namespace InDesignRepository.CC
             return isCreate;
         }
 
-        public List<Client> GetAll(Client client)
+        public List<ClientDto> GetAll(ClientDto clientDto)
         {
+            List<ClientDto> listClientDto = new List<ClientDto>();
             List<Client> listClient = new List<Client>();
             try
             {
-                if (client != null)
+                if (clientDto != null)
                 {
-                    var predicateBuilder = this.setPredicate(client);
+                    var predicateBuilder = this.setPredicate(clientDto.client);
                     using (InDesignContext context = new InDesignContext())
                     {
                         listClient = context.Client.AsNoTracking().
@@ -59,25 +61,31 @@ namespace InDesignRepository.CC
                                                                       .ToList();
                     }
                 }
+                listClient.ForEach(clientItem => 
+                {
+                    ClientDto clientDtoItemAdd = new ClientDto();
+                    clientDtoItemAdd.client = clientItem;
+                    listClientDto.Add(clientDtoItemAdd);
+                });
             }
             catch (Exception e)
             {
                 string error = e.Message;
             }
-            return listClient;
+            return listClientDto;
         }
 
-        public Client GetById(Client client)
+        public ClientDto GetById(ClientDto clientDto)
         {
-            Client clientContactResponse = new Client();
+            ClientDto clientContactResponse = new ClientDto();
             try
             {
-                if (client != null)
+                if (clientDto != null)
                 {
-                    var predicateBuilder = this.setPredicate(client);
+                    var predicateBuilder = this.setPredicate(clientDto.client);
                     using (InDesignContext context = new InDesignContext())
                     {
-                        clientContactResponse = context.Client.AsNoTracking().
+                        clientContactResponse.client = context.Client.AsNoTracking().
                                                                      Where(predicateBuilder).
                                                                      OrderBy(m => m.Id)
                                                                      .FirstOrDefault();
@@ -91,14 +99,14 @@ namespace InDesignRepository.CC
             return clientContactResponse;
         }
 
-        public bool Update(Client client)
+        public bool Update(ClientDto clientDto)
         {
             bool isUpdate = false;
-            if (client != null)
+            if (clientDto != null)
             {
                 using (InDesignContext context = new InDesignContext())
                 {
-                    context.Client.Update(client);
+                    context.Client.Update(clientDto.client);
                     int save = context.SaveChanges();
                     if (save > 0)
                     {

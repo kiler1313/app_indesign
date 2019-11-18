@@ -1,4 +1,6 @@
-﻿using InDesignInterface.CC;
+﻿using InDesignDomain.CC;
+using InDesignDTO.CC;
+using InDesignInterface.CC;
 using InDesingEntity.CC;
 using System;
 using System.Collections.Generic;
@@ -8,24 +10,24 @@ namespace InDesignApplication.CC
 {
     public class SFClient
     {
-        public string Create(Client client)
+        public string Create(ClientDto clientDto)
         {
-            throw new NotImplementedException();
+            return new DLClient().Create(clientDto);
         }
 
-        public List<Client> GetAll(Client client)
+        public List<ClientDto> GetAll(ClientDto clientDto)
         {
-            throw new NotImplementedException();
+            return new DLClient().GetAll(clientDto);
         }
 
-        public Client GetById(Client client)
+        public ClientDto GetById(ClientDto clientDto)
         {
-            throw new NotImplementedException();
+            return new DLClient().GetById(clientDto);
         }
 
-        public string Update(Client client)
+        public string Update(ClientDto clientDto)
         {
-            throw new NotImplementedException();
+            return new DLClient().Update(clientDto);
         }
     }
 }

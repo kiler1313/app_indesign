@@ -1,4 +1,6 @@
-﻿using InDesingEntity.CC;
+﻿using InDesignApplication.CC;
+using InDesignDTO.CC;
+using InDesingEntity.CC;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -14,26 +16,30 @@ namespace InDesignREST.Controllers
 
         [Route("Create")]
         [HttpPost]
-        public void Create(Contact contact)
+        public string Create(ContactDto contactDto)
         {
+            return new SFContact().Create(contactDto);
         }
 
         [Route("Update")]
         [HttpPost]
-        public void Update(Contact contact)
+        public string Update(ContactDto contactDto)
         {
+            return new SFContact().Update(contactDto);
         }
 
         [Route("GetAll")]
         [HttpPost]
-        public void GetAll(Contact contact)
+        public List<ContactDto> GetAll(ContactDto contactDto)
         {
+            return new SFContact().GetAll(contactDto);
         }
 
         [Route("GetById")]
         [HttpPost]
-        public void GetById(Contact contact)
+        public ContactDto GetById(ContactDto contactDto)
         {
+            return new SFContact().GetById(contactDto);
         }
 
     }

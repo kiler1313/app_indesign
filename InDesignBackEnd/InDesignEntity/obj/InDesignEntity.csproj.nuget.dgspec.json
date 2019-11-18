@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignEntity\\InDesignEntity.csproj": {}
+    "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignEntity\\InDesignEntity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignEntity\\InDesignEntity.csproj": {
+    "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignEntity\\InDesignEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignEntity\\InDesignEntity.csproj",
+        "projectUniqueName": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignEntity\\InDesignEntity.csproj",
         "projectName": "InDesignEntity",
-        "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignEntity\\InDesignEntity.csproj",
+        "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignEntity\\InDesignEntity.csproj",
         "packagesPath": "C:\\Users\\Ruben\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignEntity\\obj\\",
+        "outputPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignEntity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

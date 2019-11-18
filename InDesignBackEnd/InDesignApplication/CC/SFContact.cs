@@ -1,4 +1,6 @@
-﻿using InDesignInterface.CC;
+﻿using InDesignDTO.CC;
+using InDesignDomain.CC;
+using InDesignInterface.CC;
 using InDesingEntity.CC;
 using System;
 using System.Collections.Generic;
@@ -8,24 +10,24 @@ namespace InDesignApplication.CC
 {
     public class SFContact 
     {
-        public string Create(Contact contact)
+        public string Create(ContactDto contactDto)
         {
-            throw new NotImplementedException();
+            return new DLContact().Create(contactDto);
         }
 
-        public List<Contact> GetAll(Contact contact)
+        public List<ContactDto> GetAll(ContactDto contactDto)
         {
-            throw new NotImplementedException();
+            return new DLContact().GetAll(contactDto);
         }
 
-        public Contact GetById(Contact contact)
+        public ContactDto GetById(ContactDto contactDto)
         {
-            throw new NotImplementedException();
+            return new DLContact().GetById(contactDto);
         }
 
-        public string Update(Contact contact)
+        public string Update(ContactDto contactDto)
         {
-            throw new NotImplementedException();
+            return new DLContact().Update(contactDto);
         }
     }
 }

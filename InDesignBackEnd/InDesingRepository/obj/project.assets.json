@@ -3550,11 +3550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesingRepository\\InDesignRepository.csproj",
+      "projectUniqueName": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesingRepository\\InDesignRepository.csproj",
       "projectName": "InDesignRepository",
-      "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesingRepository\\InDesignRepository.csproj",
+      "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesingRepository\\InDesignRepository.csproj",
       "packagesPath": "C:\\Users\\Ruben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesingRepository\\obj\\",
+      "outputPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesingRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -3575,14 +3575,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignEntity\\InDesignEntity.csproj": {
-              "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignEntity\\InDesignEntity.csproj"
+            "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignEntity\\InDesignEntity.csproj": {
+              "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignEntity\\InDesignEntity.csproj"
             },
-            "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesign\\InDesignInterface.csproj": {
-              "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesign\\InDesignInterface.csproj"
+            "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesign\\InDesignInterface.csproj": {
+              "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesign\\InDesignInterface.csproj"
             },
-            "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesingModel\\InDesignModel.csproj": {
-              "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesingModel\\InDesignModel.csproj"
+            "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesingModel\\InDesignModel.csproj": {
+              "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesingModel\\InDesignModel.csproj"
             }
           }
         }

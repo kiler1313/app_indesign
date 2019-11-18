@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using InDesingEntity.CC;
+﻿using InDesignApplication.CC;
+using InDesignDTO.CC;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace InDesignREST.Controllers
 {
@@ -11,29 +9,32 @@ namespace InDesignREST.Controllers
     [ApiController]
     public class ClientController : ControllerBase
     {
-
         [Route("Create")]
         [HttpPost]
-        public void Create(Client client)
+        public string Create(ClientDto clientDto)
         {
+            return new SFClient().Create(clientDto);
         }
 
         [Route("Update")]
         [HttpPost]
-        public void Update(Client client)
+        public string Update(ClientDto clientDto)
         {
+            return new SFClient().Update(clientDto);
         }
 
         [Route("GetAll")]
         [HttpPost]
-        public void GetAll(Client client)
+        public List<ClientDto> GetAll(ClientDto clientDto)
         {
+            return new SFClient().GetAll(clientDto);
         }
 
         [Route("GetById")]
         [HttpPost]
-        public void GetById(Client client)
+        public ClientDto GetById(ClientDto clientDto)
         {
+            return new SFClient().GetById(clientDto);
         }
 
     }

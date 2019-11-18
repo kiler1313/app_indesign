@@ -4334,6 +4334,34 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "InDesignApplication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "InDesignDomain": "1.0.0",
+          "InDesignInterface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InDesignApplication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InDesignApplication.dll": {}
+        }
+      },
+      "InDesignDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "InDesignInterface": "1.0.0",
+          "InDesignRepository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InDesignDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InDesignDomain.dll": {}
+        }
+      },
       "InDesignDTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -4357,6 +4385,20 @@
           "bin/placeholder/InDesignEntity.dll": {}
         }
       },
+      "InDesignInterface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "InDesignDTO": "1.0.0",
+          "InDesignEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InDesignInterface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InDesignInterface.dll": {}
+        }
+      },
       "InDesignModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -4370,6 +4412,22 @@
         },
         "runtime": {
           "bin/placeholder/InDesignModel.dll": {}
+        }
+      },
+      "InDesignRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "InDesignEntity": "1.0.0",
+          "InDesignInterface": "1.0.0",
+          "InDesignModel": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.11"
+        },
+        "compile": {
+          "bin/placeholder/InDesignRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InDesignRepository.dll": {}
         }
       }
     }
@@ -11828,6 +11886,16 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "InDesignApplication/1.0.0": {
+      "type": "project",
+      "path": "../InDesignApplication/InDesignApplication.csproj",
+      "msbuildProject": "../InDesignApplication/InDesignApplication.csproj"
+    },
+    "InDesignDomain/1.0.0": {
+      "type": "project",
+      "path": "../InDesingDomain/InDesignDomain.csproj",
+      "msbuildProject": "../InDesingDomain/InDesignDomain.csproj"
+    },
     "InDesignDTO/1.0.0": {
       "type": "project",
       "path": "../InDesignDTO/InDesignDTO.csproj",
@@ -11838,14 +11906,25 @@
       "path": "../InDesignEntity/InDesignEntity.csproj",
       "msbuildProject": "../InDesignEntity/InDesignEntity.csproj"
     },
+    "InDesignInterface/1.0.0": {
+      "type": "project",
+      "path": "../InDesign/InDesignInterface.csproj",
+      "msbuildProject": "../InDesign/InDesignInterface.csproj"
+    },
     "InDesignModel/1.0.0": {
       "type": "project",
       "path": "../InDesingModel/InDesignModel.csproj",
       "msbuildProject": "../InDesingModel/InDesignModel.csproj"
+    },
+    "InDesignRepository/1.0.0": {
+      "type": "project",
+      "path": "../InDesingRepository/InDesignRepository.csproj",
+      "msbuildProject": "../InDesingRepository/InDesignRepository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "InDesignApplication >= 1.0.0",
       "InDesignDTO >= 1.0.0",
       "InDesignModel >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
@@ -11862,11 +11941,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignREST\\InDesignREST.csproj",
+      "projectUniqueName": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignREST\\InDesignREST.csproj",
       "projectName": "InDesignREST",
-      "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignREST\\InDesignREST.csproj",
+      "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignREST\\InDesignREST.csproj",
       "packagesPath": "C:\\Users\\Ruben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignREST\\obj\\",
+      "outputPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignREST\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -11887,11 +11966,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignDTO\\InDesignDTO.csproj": {
-              "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignDTO\\InDesignDTO.csproj"
+            "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignApplication\\InDesignApplication.csproj": {
+              "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignApplication\\InDesignApplication.csproj"
             },
-            "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesingModel\\InDesignModel.csproj": {
-              "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesingModel\\InDesignModel.csproj"
+            "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignDTO\\InDesignDTO.csproj": {
+              "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignDTO\\InDesignDTO.csproj"
+            },
+            "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesingModel\\InDesignModel.csproj": {
+              "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesingModel\\InDesignModel.csproj"
             }
           }
         }

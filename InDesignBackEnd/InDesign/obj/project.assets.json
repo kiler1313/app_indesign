@@ -730,11 +730,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesign\\InDesignInterface.csproj",
+      "projectUniqueName": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesign\\InDesignInterface.csproj",
       "projectName": "InDesignInterface",
-      "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesign\\InDesignInterface.csproj",
+      "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesign\\InDesignInterface.csproj",
       "packagesPath": "C:\\Users\\Ruben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesign\\obj\\",
+      "outputPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesign\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -755,11 +755,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignDTO\\InDesignDTO.csproj": {
-              "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignDTO\\InDesignDTO.csproj"
+            "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignDTO\\InDesignDTO.csproj": {
+              "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignDTO\\InDesignDTO.csproj"
             },
-            "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignEntity\\InDesignEntity.csproj": {
-              "projectPath": "C:\\Users\\Ruben\\source\\repos\\InDesign\\InDesignEntity\\InDesignEntity.csproj"
+            "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignEntity\\InDesignEntity.csproj": {
+              "projectPath": "C:\\Users\\Ruben\\source\\repos\\app_indesign\\InDesignBackEnd\\InDesignEntity\\InDesignEntity.csproj"
             }
           }
         }

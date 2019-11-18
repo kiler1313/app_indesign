@@ -1,13 +1,14 @@
-﻿using InDesingEntity.CC;
+﻿using InDesignDTO.CC;
+using InDesingEntity.CC;
 using System.Collections.Generic;
 
 namespace InDesignInterface.CC
 {
     public interface IClientRepository
     {
-        List<Client> GetAll(Client client);
-        Client GetById(Client client);
-        bool Create(Client client);
-        bool Update(Client client);
+        List<ClientDto> GetAll(ClientDto clientDto);
+        ClientDto GetById(ClientDto clientDto);
+        bool Create(ClientDto clientDto);
+        bool Update(ClientDto clientDto);
     }
 }

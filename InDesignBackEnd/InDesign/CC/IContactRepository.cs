@@ -1,13 +1,14 @@
-﻿using InDesingEntity.CC;
+﻿using InDesignDTO.CC;
+using InDesingEntity.CC;
 using System.Collections.Generic;
 
 namespace InDesignInterface.CC
 {
     public interface IContactRepository
     {
-        List<Contact> GetAll(Contact contact);
-        Contact GetById(Contact contact);
-        bool Create(Contact contact);
-        bool Update(Contact contact);
+        List<ContactDto> GetAll(ContactDto contactDto);
+        ContactDto GetById(ContactDto contactDto);
+        bool Create(ContactDto contactDto);
+        bool Update(ContactDto contactDto);
     }
 }

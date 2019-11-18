@@ -1,4 +1,5 @@
-﻿using InDesignInterface.CC;
+﻿using InDesignDTO.CC;
+using InDesignInterface.CC;
 using InDesignModel;
 using InDesignRepository.UT;
 using InDesingEntity.CC;
@@ -12,14 +13,14 @@ namespace InDesignRepository.CC
 {
     public class ContactRepository : IContactRepository
     {
-        public bool Create(Contact contact)
+        public bool Create(ContactDto contactDto)
         {
             bool isCreate = false;
-            if (contact != null)
+            if (contactDto != null)
             {
                 using (InDesignContext context = new InDesignContext())
                 {
-                    context.Contact.Add(contact);
+                    context.Contact.Add(contactDto.contact);
                     int save = context.SaveChanges();
                     if (save > 0)
                     {
@@ -34,17 +35,19 @@ namespace InDesignRepository.CC
             return isCreate;
         }
 
-        public List<Contact> GetAll(Contact contact)
+        public List<ContactDto> GetAll(ContactDto contactDto)
         {
-            List<Contact> listClient = new List<Contact>();
+            List<ContactDto> listContactDto = new List<ContactDto>();
+            List<Contact> listContact = new List<Contact>();
+
             try
             {
-                if (contact != null)
+                if (contactDto != null)
                 {
-                    var predicateBuilder = this.setPredicate(contact);
+                    var predicateBuilder = this.setPredicate(contactDto.contact);
                     using (InDesignContext context = new InDesignContext())
                     {
-                        listClient = context.Contact.AsNoTracking().
+                        listContact = context.Contact.AsNoTracking().
                                                                      Where(predicateBuilder).
                                                                      OrderBy(m => m.Id)
                                                                      .ToList();
@@ -54,30 +57,36 @@ namespace InDesignRepository.CC
                 {
                     using (InDesignContext context = new InDesignContext())
                     {
-                        listClient = context.Contact.AsNoTracking().
+                        listContact = context.Contact.AsNoTracking().
                                                                       OrderBy(m => m.Id)
                                                                       .ToList();
                     }
                 }
+                listContact.ForEach(contactItem =>
+                {
+                    ContactDto contactDtoItemAdd = new ContactDto();
+                    contactDtoItemAdd.contact = contactItem;
+                    listContactDto.Add(contactDtoItemAdd);
+                });
             }
             catch (Exception e)
             {
                 string error = e.Message;
             }
-            return listClient;
+            return listContactDto;
         }
 
-        public Contact GetById(Contact contact)
+        public ContactDto GetById(ContactDto contactDto)
         {
-            Contact clientContactResponse = new Contact();
+            ContactDto clientContactResponse = new ContactDto();
             try
             {
-                if (contact != null)
+                if (contactDto != null)
                 {
-                    var predicateBuilder = this.setPredicate(contact);
+                    var predicateBuilder = this.setPredicate(contactDto.contact);
                     using (InDesignContext context = new InDesignContext())
                     {
-                        clientContactResponse = context.Contact.AsNoTracking().
+                        clientContactResponse.contact = context.Contact.AsNoTracking().
                                                                      Where(predicateBuilder).
                                                                      OrderBy(m => m.Id)
                                                                      .FirstOrDefault();
@@ -91,14 +100,14 @@ namespace InDesignRepository.CC
             return clientContactResponse;
         }
 
-        public bool Update(Contact contact)
+        public bool Update(ContactDto contactDto)
         {
             bool isUpdate = false;
-            if (contact != null)
+            if (contactDto != null)
             {
                 using (InDesignContext context = new InDesignContext())
                 {
-                    context.Contact.Update(contact);
+                    context.Contact.Update(contactDto.contact);
                     int save = context.SaveChanges();
                     if (save > 0)
                     {

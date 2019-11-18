@@ -1,4 +1,6 @@
-﻿using InDesignInterface.CC;
+﻿using InDesignDTO.CC;
+using InDesignInterface.CC;
+using InDesignRepository.CC;
 using InDesingEntity.CC;
 using System;
 using System.Collections.Generic;
@@ -8,24 +10,62 @@ namespace InDesignDomain.CC
 {
     public class DLClient 
     {
-        public string Create(Client client)
+        public string Create(ClientDto clientDto)
         {
-            throw new NotImplementedException();
+            string response = "";
+            if (clientDto.client != null)
+            {
+                bool isCreate = new ClientRepository().Create(clientDto);
+                if (isCreate)
+                {
+                    response = "El cliente fue creado exitosamente";
+                }
+                else
+                {
+                    response = "No se pudo realizar el registro del cliente. Posiblemente existe u ocurrio una excepciòn";
+                }
+            }
+            else
+            {
+                response = "La solicitud de creaciòn del cliente no esta diligenciada";
+            }
+            return response;
         }
 
-        public List<Client> GetAll(Client client)
+        public List<ClientDto> GetAll(ClientDto clientDto)
         {
-            throw new NotImplementedException();
+            List<ClientDto> listClientDto = new List<ClientDto>();
+            listClientDto = new ClientRepository().GetAll(clientDto);
+            return listClientDto;
         }
 
-        public Client GetById(Client client)
+        public ClientDto GetById(ClientDto clientDto)
         {
-            throw new NotImplementedException();
+            ClientDto clientDtoResponse = new ClientDto();
+            clientDtoResponse = new ClientRepository().GetById(clientDto);
+            return clientDtoResponse;
         }
 
-        public string Update(Client client)
+        public string Update(ClientDto clientDto)
         {
-            throw new NotImplementedException();
+            string response = "";
+            if (clientDto.client != null)
+            {
+                bool isUpdate = new ClientRepository().Update(clientDto);
+                if (isUpdate)
+                {
+                    response = "El cliente fue actualizado exitosamente";
+                }
+                else
+                {
+                    response = "No se pudo realizar la actualizaciòn del cliente. Posiblemente no existe u ocurrio una excepciòn";
+                }
+            }
+            else
+            {
+                response = "La solicitud de actualizaciòn del cliente no esta diligenciada";
+            }
+            return response;
         }
     }
 }

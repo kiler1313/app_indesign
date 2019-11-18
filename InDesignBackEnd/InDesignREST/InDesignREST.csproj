@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\InDesignApplication\InDesignApplication.csproj" />
     <ProjectReference Include="..\InDesignDTO\InDesignDTO.csproj" />
     <ProjectReference Include="..\InDesingModel\InDesignModel.csproj" />
   </ItemGroup>
